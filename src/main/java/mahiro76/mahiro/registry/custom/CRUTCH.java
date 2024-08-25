@@ -13,7 +13,6 @@ public class CRUTCH extends Item {
         super(settings);
     }
 
-    @Override
     public boolean postHit(ItemStack stack, PlayerEntity target, PlayerEntity attacker) {
         target.addVelocity(0.0D, 0.5D, 0.0D); // 添加击退效果
         return super.postHit(stack, target, attacker);

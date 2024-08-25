@@ -16,7 +16,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     //添加拐杖
     public static final Item CRUTCH =registerItem("crutch",
-            new CRUTCH(new Item.Settings()))
+            new CRUTCH(new Item.Settings()));
 
     //添加固化剂
     public static final Item HARDENER = registerItem("hardener",
