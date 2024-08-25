@@ -1,7 +1,7 @@
 package mahiro76.mahiro.registry;
 
 import mahiro76.mahiro.Mahiro;
-import mahiro76.mahiro.registry.custom.Crutch;
+import mahiro76.mahiro.registry.custom.CrutchItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.minecraft.item.Item;
@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     //添加拐杖
     public static final Item CRUTCH =registerItem("crutch",
-            new Crutch(new Item.Settings()));
+            new CrutchItem(new Item.Settings()));
 
     //添加固化剂
     public static final Item HARDENER = registerItem("hardener",

@@ -3,9 +3,9 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class Crutch extends Item {
+public class CrutchItem extends Item {
 
-    public Crutch(Settings settings) {
+    public CrutchItem(Settings settings) {
         super(settings);
     }
 
