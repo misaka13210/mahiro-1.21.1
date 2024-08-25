@@ -9,15 +9,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroup {
+public class MahiroItemGroup {
     public static ItemGroup FIGHTTINGITEM = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Mahiro.MOD_ID, "mahiroitemgroup"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemgroup.mahiro.crutch"))
-                    .icon(()->new ItemStack(ModItems.CRUTCH)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.CRUTCH);
-                    }).build());
-    public static void registerModItemGroup(){
-        Mahiro.LOGGER.debug("registerModItemGroup"+ Mahiro.MOD_ID);
+                    .icon(() -> new ItemStack(MahiroItems.CRUTCH))
+                    .entries((displayContext, entries) -> entries.add(MahiroItems.CRUTCH)).build());
+
+    public static void registerModItemGroup() {
+        Mahiro.LOGGER.debug("registerModItemGroup" + Mahiro.MOD_ID);
     }
 }
