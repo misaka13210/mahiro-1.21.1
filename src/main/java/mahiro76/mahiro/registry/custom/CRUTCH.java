@@ -7,10 +7,10 @@ import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Hand;
 
-public class CRUTCH extends SwordItem {
+public class CRUTCH extends Item {
 
-    public CRUTCH(ToolMaterial toolMaterial, Settings settings) {
-        super(toolMaterial, settings);
+    public CRUTCH(Settings settings) {
+        super(settings);
     }
 
     @Override
