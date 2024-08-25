@@ -11,11 +11,17 @@ base {
 }
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	maven {
+		url 'https://maven.aliyun.com/nexus/content/groups/public'
+	}
+	maven {
+		url 'https://repository.hanbings.io/proxy'
+	}
+	// 在此处添加存储库以检索构件。
+	// 你应该只在依赖其他 Mod 时使用它，因为
+	// Loom 添加了必要的 maven 存储库，以自动从 Minecraft 和库下载。
+	// 访问https://docs.gradle.org/current/userguide/declaring_repositories.html
+	// 了解有关存储库的更多信息。
 }
 
 fabricApi {
@@ -23,12 +29,12 @@ fabricApi {
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
+	//要更改版本，请参阅 gradle.properties 文件
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fabric API 的 API 中。这在技术上是可选的，但您可能仍然需要它。
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	
 }
@@ -46,9 +52,8 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
+	//如果存在， Loom 会自动将 sourcesJar 附加到 RemapSourcesJar 任务和 “build” 任务
+	// 如果删除此行，则不会生成源。
 	withSourcesJar()
 
 	sourceCompatibility = JavaVersion.VERSION_21
@@ -61,7 +66,7 @@ jar {
 	}
 }
 
-// configure the maven publication
+//配置 Maven 发布
 publishing {
 	publications {
 		create("mavenJava", MavenPublication) {
@@ -70,11 +75,11 @@ publishing {
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
+	// 有关如何设置发布的信息，请参阅 https://docs.gradle.org/current/userguide/publishing_maven.html。
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		// 在此处添加要发布到的存储库。
+		// 注意： 此区块与顶层区块的功能不同。
+		// 此处的存储库将用于发布您的构件，而不是
+		// 检索依赖项。
 	}
 }

@@ -5,18 +5,21 @@
 	"name": "mahiro",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"misaka13210"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/misaka13210/",
+		"sources": "https://github.com/misaka13210/mahiro-1.21.1"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/mahiro/icon.png",
+	"license": "MIT",
+	"icon": "assets/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
           "mahiro76.mahiro.mahiro"
+		],
+		"client": [
+			"mahiro76.mahiro.mahiroClient"
 		],
 		"fabric-datagen": [
 			"mahiro76.mahiro.mahiroDataGenerator"
