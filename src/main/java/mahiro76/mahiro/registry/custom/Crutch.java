@@ -1,15 +1,11 @@
 package mahiro76.mahiro.registry.custom;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.Hand;
 
-public class CRUTCH extends Item {
+public class Crutch extends Item {
 
-    public CRUTCH(Settings settings) {
+    public Crutch(Settings settings) {
         super(settings);
     }
 

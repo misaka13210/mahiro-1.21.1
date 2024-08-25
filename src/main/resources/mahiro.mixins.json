@@ -3,7 +3,7 @@
 	"package": "mahiro76.mahiro.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-      "mahiroMixin"
+      "MahiroMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

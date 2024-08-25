@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "mahiro76.mahiro.mahiro"
+			"mahiro76.mahiro.Mahiro"
 		],
 		"client": [
-			"mahiro76.mahiro.mahiroClient"
+			"mahiro76.mahiro.MahiroClient"
 		],
 		"fabric-datagen": [
-			"mahiro76.mahiro.mahiroDataGenerator"
+			"mahiro76.mahiro.MahiroDataGenerator"
 		]
 	},
 	"mixins": [
