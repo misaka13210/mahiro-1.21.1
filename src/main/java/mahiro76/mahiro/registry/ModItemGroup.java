@@ -10,7 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroup {
-    public static ItemGroup fightingtools = Registry.register(Registries.ITEM_GROUP,
+    public static ItemGroup FIGHTTINGITEM = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(mahiro.MOD_ID, "mahiroitemgroup"),
             FabricItemGroup.builder()
                     .displayName(Text.translatable("itemgroup.mahiro.crutch"))
