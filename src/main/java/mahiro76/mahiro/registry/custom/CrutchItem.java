@@ -30,7 +30,7 @@ public class CrutchItem extends Item {
         List<AttributeModifiersComponent.Entry> entries = List.of(new AttributeModifiersComponent.Entry(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, modifier, AttributeModifierSlot.MAINHAND));
         return new AttributeModifiersComponent(entries, true);
     }
-
+    
     //覆写方法，添加物品提示文本
     @Override
     public void appendTooltip(ItemStack itemStack, TooltipContext context, List<Text> tooltip, TooltipType type) {
