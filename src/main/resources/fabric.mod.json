@@ -22,7 +22,7 @@
 			"mahiro76.mahiro.MahiroClient"
 		],
 		"fabric-datagen": [
-			"mahiro76.mahiro.MahiroDataGenerator"
+			"mahiro76.mahiro.datageneration.DataGeneration"
 		]
 	},
 	"mixins": [
