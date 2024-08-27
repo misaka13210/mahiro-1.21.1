@@ -10,12 +10,14 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class MahiroItemGroup {
-    public static ItemGroup FIGHTTINGITEM = Registry.register(Registries.ITEM_GROUP,
+    public static ItemGroup FIGHT = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Mahiro.MOD_ID, "mahiroitemgroup"),
             FabricItemGroup.builder()
-                    .displayName(Text.translatable("itemgroup.mahiro.crutch"))
+                    .displayName(Text.translatable("itemgroup.mahiro.fight"))
                     .icon(() -> new ItemStack(MahiroItems.CRUTCH))
-                    .entries((displayContext, entries) -> entries.add(MahiroItems.CRUTCH)).build());
+                    .entries((displayContext, entries) -> {
+                        entries.add(MahiroItems.CRUTCH);
+                    }).build());
 
     public static void registerModItemGroup() {
         Mahiro.LOGGER.debug("registerModItemGroup" + Mahiro.MOD_ID);

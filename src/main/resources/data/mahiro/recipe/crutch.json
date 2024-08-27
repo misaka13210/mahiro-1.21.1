@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "#  ",
+    "   "
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:stick"
+    }
+  },
+  "result": {
+    "id": "mahiro:crutch",
+    "count": 1
+  }
+}
