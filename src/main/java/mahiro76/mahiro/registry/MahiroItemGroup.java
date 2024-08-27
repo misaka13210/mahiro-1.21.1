@@ -10,6 +10,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class MahiroItemGroup {
+    //武器物品类
     public static ItemGroup FIGHT = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Mahiro.MOD_ID, "mahiroitemgroup"),
             FabricItemGroup.builder()
@@ -17,6 +18,16 @@ public class MahiroItemGroup {
                     .icon(() -> new ItemStack(MahiroItems.CRUTCH))
                     .entries((displayContext, entries) -> {
                         entries.add(MahiroItems.CRUTCH);
+                    }).build());
+
+    //添加材料类
+    public static ItemGroup MATERIAL = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(Mahiro.MOD_ID,"mahiroitemgroup"),
+            FabricItemGroup.builder()
+                    .displayName(Text.translatable("itemgroup.mahiro.material"))
+                    .icon(() -> new ItemStack(MahiroItems.HARDENER))
+                    .entries((displayContext, entries) -> {
+                        entries.add(MahiroItems.HARDENER);
                     }).build());
 
     public static void registerModItemGroup() {
