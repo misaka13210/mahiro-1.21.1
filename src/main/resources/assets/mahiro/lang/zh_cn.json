@@ -1,4 +1,5 @@
 {
   "item.mahiro.crutch": "拐杖",
-  "itemgroup.mahiro.crutch": "六花服:战斗用品"
+  "itemgroup.mahiro.fight": "六花服:战斗用品",
+  "item.mahiro.crutch.tips": "爷爷留下的一根破旧拐杖。或许有着奇特的效果？"
 }
