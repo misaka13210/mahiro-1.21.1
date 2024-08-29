@@ -13,10 +13,10 @@ import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
 import java.util.List;
 
 public class CrutchItem extends Item {
+
     private static final Identifier ID = Identifier.of(Mahiro.MOD_ID, "crutch_knockback");
 
     public CrutchItem(Settings settings) {
@@ -30,7 +30,7 @@ public class CrutchItem extends Item {
                 // 击退属性
                 createModifiers(EntityAttributes.GENERIC_ATTACK_KNOCKBACK, 5),
                 // 攻击伤害属性
-                createModifiers(EntityAttributes.GENERIC_ATTACK_DAMAGE, 3));
+                createModifiers(EntityAttributes.GENERIC_ATTACK_DAMAGE, 4));
         // 这里布尔值参数决定了是否显示属性修改的工具提示
         return new AttributeModifiersComponent(entries, true);
     }
@@ -42,6 +42,7 @@ public class CrutchItem extends Item {
      * @param value     要给属性增加的值
      * @return 属性修改组件
      */
+
     private static AttributeModifiersComponent.Entry createModifiers(RegistryEntry<EntityAttribute> attribute, int value) {
         EntityAttributeModifier modifier = new EntityAttributeModifier(ID, value, EntityAttributeModifier.Operation.ADD_VALUE);
         return new AttributeModifiersComponent.Entry(attribute, modifier, AttributeModifierSlot.MAINHAND);

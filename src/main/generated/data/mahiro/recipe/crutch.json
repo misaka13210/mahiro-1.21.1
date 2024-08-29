@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
-  "pattern": [
-    "#",
-    "#"
-  ],
   "key": {
-    "#": {
+    "S": {
       "item": "minecraft:stick"
     }
   },
+  "pattern": [
+    "S  ",
+    "S  ",
+    "   "
+  ],
   "result": {
-    "id": "mahiro:crutch",
-    "count": 1
+    "count": 1,
+    "id": "mahiro:crutch"
   }
 }
