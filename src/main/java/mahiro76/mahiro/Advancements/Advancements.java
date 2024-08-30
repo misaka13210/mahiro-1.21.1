@@ -8,6 +8,7 @@ import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.client.gui.LogoDrawer;
 import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
 
 import java.rmi.registry.Registry;
 import java.util.function.Consumer;
@@ -22,7 +23,7 @@ public class Advancements implements Consumer<Consumer<AdvancementEntry>> {
                         MahiroItems.CRUTCH,
                         Text.literal(String.valueOf(Text.translatable("advancement.mahiro.crutch"))),
                         Text.literal(String.valueOf(Text.translatable("advancement.mahiro.crutch.discreb"))),
-                        new ,
+                        Identifier.of("textures/gui/advancements/backgrounds/adventure.png"),
                         AdvancementFrame.TASK,
                         true,
                         false,
