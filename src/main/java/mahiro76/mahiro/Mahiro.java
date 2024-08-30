@@ -21,7 +21,7 @@ public class Mahiro implements ModInitializer {
 		// 但是，某些内容 （（如资源） ） 可能仍未初始化。
 		// 请谨慎行事。
 
-		LOGGER.info("Hello world!");
+		LOGGER.info("mahiro run successful!");
 		MahiroItemGroup.registerModItemGroup();
 		MahiroItems.registerMahiroItems();
 	}

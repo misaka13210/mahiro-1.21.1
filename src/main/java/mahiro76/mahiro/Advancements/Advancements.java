@@ -23,11 +23,11 @@ public class Advancements implements Consumer<Consumer<AdvancementEntry>> {
                         Identifier.of("textures/gui/advancements/backgrounds/adventure.png"),
                         AdvancementFrame.TASK,
                         true,
-                        false,
+                        true,
                         false
                 )
-                .criterion("got crutch", InventoryChangedCriterion.Conditions.items(MahiroItems.CRUTCH))
-                .build(consumer,"mahiro"+"/root");
+                .criterion("got_crutch", InventoryChangedCriterion.Conditions.items(MahiroItems.CRUTCH))
+                .build(consumer,"mahiro"+"/get_crutch");
 
     }
 }
