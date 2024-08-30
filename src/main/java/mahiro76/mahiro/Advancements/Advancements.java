@@ -1,16 +1,13 @@
 package mahiro76.mahiro.Advancements;
 
-import jdk.internal.access.JavaNetUriAccess;
 import mahiro76.mahiro.registry.MahiroItems;
 import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
-import net.minecraft.client.gui.LogoDrawer;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import java.rmi.registry.Registry;
 import java.util.function.Consumer;
 
 
