@@ -2,5 +2,7 @@
   "item.mahiro.crutch": "拐杖",
   "itemgroup.mahiro.fight": "六花服:战斗用品",
   "item.mahiro.crutch.tips": "爷爷留下的一根破旧拐杖。或许有着奇特的效果？",
-  "itemgroup.mahiro.material": "六花服:材料"
+  "itemgroup.mahiro.material": "六花服:材料",
+  "advancement.mahiro.crutch": "爷爷的拐杖",
+  "advancement.mahiro.crutch.description": "获得一根拐杖"
 }
