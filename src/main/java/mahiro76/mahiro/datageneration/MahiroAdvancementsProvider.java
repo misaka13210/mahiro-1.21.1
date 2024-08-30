@@ -1,14 +1,13 @@
 package mahiro76.mahiro.datageneration;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import mahiro76.mahiro.Advancements.Advancements;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricAdvancementProvider;
-import net.minecraft.advancement.Advancement;
 import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.registry.RegistryWrapper;
-
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Consumer;
+
 
 public class MahiroAdvancementsProvider extends FabricAdvancementProvider {
 
@@ -18,7 +17,6 @@ public class MahiroAdvancementsProvider extends FabricAdvancementProvider {
 
     @Override
     public void generateAdvancement(RegistryWrapper.WrapperLookup registryLookup, Consumer<AdvancementEntry> consumer) {
-
+        new Advancements().accept(consumer);
     }
 }
-
