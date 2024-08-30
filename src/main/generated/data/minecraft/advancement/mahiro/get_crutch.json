@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "got_crutch": {
+      "conditions": {
+        "items": [
+          {
+            "items": "mahiro:crutch"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": {
+      "translate": "advancement.mahiro.crutch.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "mahiro:crutch"
+    },
+    "title": {
+      "translate":"advancement.mahiro.crutch"
+    }
+  },
+  "requirements": [
+    [
+      "got_crutch"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
