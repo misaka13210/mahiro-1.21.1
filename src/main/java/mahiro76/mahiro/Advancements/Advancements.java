@@ -18,8 +18,8 @@ public class Advancements implements Consumer<Consumer<AdvancementEntry>> {
         AdvancementEntry rootAdvancement = Advancement.Builder.create()
                 .display(
                         MahiroItems.CRUTCH,
-                        Text.literal(String.valueOf(Text.translatable("advancement.mahiro.crutch"))),
-                        Text.literal(String.valueOf(Text.translatable("advancement.mahiro.crutch.description"))),
+                        Text.translatable("advancement.mahiro.crutch"),
+                        Text.translatable("advancement.mahiro.crutch.description"),
                         Identifier.of("textures/gui/advancements/backgrounds/adventure.png"),
                         AdvancementFrame.TASK,
                         true,
