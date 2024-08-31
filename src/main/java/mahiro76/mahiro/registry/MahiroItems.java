@@ -1,8 +1,7 @@
 package mahiro76.mahiro.registry;
 
 import mahiro76.mahiro.Mahiro;
-import mahiro76.mahiro.registry.custom.CrutchItem;
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import mahiro76.mahiro.registry.item.CrutchItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;

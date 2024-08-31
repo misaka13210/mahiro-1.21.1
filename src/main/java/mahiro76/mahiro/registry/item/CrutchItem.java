@@ -1,4 +1,4 @@
-package mahiro76.mahiro.registry.custom;
+package mahiro76.mahiro.registry.item;
 
 import mahiro76.mahiro.Mahiro;
 import net.minecraft.component.DataComponentTypes;

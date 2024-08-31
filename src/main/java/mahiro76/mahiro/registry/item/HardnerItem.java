@@ -1,4 +1,4 @@
-package mahiro76.mahiro.registry.custom;
+package mahiro76.mahiro.registry.item;
 
 import net.minecraft.item.Item;
 
