@@ -30,6 +30,7 @@ public class MahiroItemGroup {
                         entries.add(MahiroItems.HARDENER);
                     }).build());
 
+    //启动初始化方法
     public static void registerModItemGroup() {
         Mahiro.LOGGER.debug("registerModItemGroup" + Mahiro.MOD_ID);
     }
