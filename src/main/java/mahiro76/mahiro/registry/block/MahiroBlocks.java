@@ -13,7 +13,8 @@ import net.minecraft.util.Identifier;
 
 public class MahiroBlocks {
     //在下方添加物品
-    public static final Block BIGGER_BOX = registerBlock("bigger_box",new Block(AbstractBlock.Settings.create().strength(3.0f,4.0f)));
+    public static final Block BIGGER_BOX = registerBlock("bigger_box",new Block(AbstractBlock.Settings.create()
+            .strength(3.0f,4.0f)));
 
     //方块物品注册方法（在注册方块的同时注册方块物品）
     public static void registerBlockItems(String id,Block block){
@@ -29,4 +30,10 @@ public class MahiroBlocks {
         registerBlockItems(id, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Mahiro.MOD_ID, id), block);
     }
+
+    //添加启动初始化方法
+    public static void registerMahiroBlocks() {
+        Mahiro.LOGGER.debug("Registering mod BLock for" + Mahiro.MOD_ID);
+    }
+
 }

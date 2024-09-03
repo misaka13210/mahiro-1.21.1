@@ -2,6 +2,7 @@ package mahiro76.mahiro;
 
 import mahiro76.mahiro.registry.MahiroItemGroup;
 import mahiro76.mahiro.registry.MahiroItems;
+import mahiro76.mahiro.registry.block.MahiroBlocks;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,8 +29,9 @@ public class Mahiro implements ModInitializer {
 		 *}
 		 */
 
-		LOGGER.info("mahiro run successful!");
+		LOGGER.info("mahiro run successfully!");
 		MahiroItemGroup.registerModItemGroup();
 		MahiroItems.registerMahiroItems();
+		MahiroBlocks.registerMahiroBlocks();
 	}
 }

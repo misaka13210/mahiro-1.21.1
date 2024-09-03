@@ -2,6 +2,7 @@ package mahiro76.mahiro.registry;
 
 import mahiro76.mahiro.Mahiro;
 import mahiro76.mahiro.registry.item.CrutchItem;
+import mahiro76.mahiro.registry.item.HardenerItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -12,7 +13,7 @@ public class MahiroItems {
     public static final CrutchItem CRUTCH = registerItem("crutch", new CrutchItem(new Item.Settings()));
 
     //添加固化剂
-    public static final Item HARDENER = registerItem("hardener", new Item(new Item.Settings()));
+    public static final HardenerItem HARDENER = registerItem("hardener", new HardenerItem(new Item.Settings()));
 
 
 
