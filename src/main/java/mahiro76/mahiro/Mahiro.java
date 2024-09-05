@@ -2,12 +2,10 @@ package mahiro76.mahiro;
 
 import mahiro76.mahiro.registry.MahiroItemGroup;
 import mahiro76.mahiro.registry.MahiroItems;
-import mahiro76.mahiro.registry.block.MahiroBlocks;
+import mahiro76.mahiro.registry.MahiroBlocks;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import static com.mojang.text2speech.Narrator.LOGGER;
 
 public class Mahiro implements ModInitializer {
 	// 此记录器用于将文本写入控制台和日志文件。
