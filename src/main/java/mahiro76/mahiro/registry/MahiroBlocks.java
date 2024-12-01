@@ -14,11 +14,7 @@ import net.minecraft.util.Identifier;
 
 public class MahiroBlocks {
     //在下方添加物品
-
-    private static final AbstractBlock.ContextPredicate BIGGERBOX_SUFFOCATES_PREDICATE = (state, world, pos) -> world.getBlockEntity(pos) instanceof ShulkerBoxBlockEntity shulkerBoxBlockEntity
-            ? shulkerBoxBlockEntity.suffocates()
-            : true;
-
+    public static Block Limestone = register("limestone", new Block(AbstractBlock.Settings.copy(net.minecraft.block.Blocks.STONE)));
 
     //方块物品注册方法（在注册方块的同时注册方块物品）
     public static void registerBlockItems(String id,Block block){
